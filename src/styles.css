@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f7f8f8, #e2e2e2);
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #4a90e2, #50e3c2);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    font-size: 2em;
+  }
+  
+  /* Note Form */
+  .note-form {
+    margin-bottom: 20px;
+  }
+  
+  .note-form input,
+  .note-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  .note-form textarea {
+    height: 100px;
+  }
+  
+  .note-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #4a90e2;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .note-form button:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+  }
+  
+  .note-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Note Item */
+  .note-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .note-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .note-item h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+  }
+  
+  .note-item p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .note-item .timestamp {
+    color: #888;
+    font-size: 0.85em;
+  }
+  
+  .note-item .buttons {
+    margin-top: 10px;
+  }
+  
+  .note-item .buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .note-item .buttons button.edit {
+    background-color: #4CAF50;
+  }
+  
+  .note-item .buttons button.delete {
+    background-color: #f44336;
+  }
+  
+  .note-item .buttons button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+  
+  /* Search Bar */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #888;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  .pagination span {
+    line-height: 34px;
+    font-size: 1em;
+    color: #555;
+  }
+  
